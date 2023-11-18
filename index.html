@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+      <p class="between">(Best of Five)</p>
+      <button class="btn reset">Reset Score</button>
+      <div class="opponent-symbol">
+        <img src="imgs/question.png" class="opponent-image" />
+      </div>
+      <p class="message">Start guessing...</p>
+      <p class="label-score">💯 Score: <span class="score">0</span> Wins</p>
+      <p class="label-highscore">
+        🥇 Highscore: <span class="highscore">0</span> Wins
+      </p>
+    </header>
+    <main>
+      <div class="row">
+        <div class="column">
+          <button class="btn rock">Rock!</button>
+          <br />
+          <img src="./imgs/rock.png" class="user-image" />
+        </div>
+        <div class="column">
+          <button class="btn paper">Paper!</button>
+          <br />
+          <img src="./imgs/paper.png" class="user-image" />
+        </div>
+        <div class="column">
+          <button class="btn scissors">Scissors!</button>
+          <br />
+          <img src="./imgs/scissors.png" class="user-image" />
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
