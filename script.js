@@ -57,7 +57,7 @@ function getNextComputerIndex(lastComputerIndex) {
   return lastComputerIndex % 3;
 }
 
-function endGame(score) {
+function endGame() {
   document.querySelector("body").style.backgroundColor = "#222";
   const highscore = Number(document.querySelector(".highscore").textContent);
   if (highscore < score) {
@@ -78,7 +78,7 @@ function symbolClick(userSymbolIdx) {
   document.querySelector(".score").textContent = score;
   playedGames++;
   if (5 <= playedGames) {
-    endGame(score);
+    endGame();
   }
   computerSymbolIdx = getNextComputerIndex(computerSymbolIdx);
 }
@@ -105,5 +105,5 @@ document.querySelector(".scissors").addEventListener("click", function () {
 });
 
 document.querySelector(".reset").addEventListener("click", function () {
-  endGame(score);
+  endGame();
 });
